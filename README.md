@@ -1,3 +1,3 @@
 # ZnSiteFinder
 
-[![Paper]()](https://doi.org/...)
+[![Paper]()]()
