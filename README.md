@@ -8,6 +8,9 @@ ZnSiteFinder: A Graph Neural Network for ```math Zn$^{2+}$```-Binding Site Predi
 ## Installation and running
 ## Prediction of Zn2+ binding sites
 ## Training
+### Download data
+HOLO SET: python main.py download --holo
+JCIM BENCHMARK SET: python main.py download --jcim
 ## Prediction
 
 ## Data
