@@ -7,7 +7,7 @@ import numpy as np
 from scipy.optimize import linear_sum_assignment
 from tqdm import tqdm
 
-from src.core.GNN import MIDAS
+from src.core.GNN import ZnSiteFinder
 from config import (ROOT_DIR, DATA_DIR, GRAPHS_PATH, MODELS_DIR,
                     TRILATERATE_MIN_SIZE, SITE_MATCH_RADIUS, CLUSTER_CUTOFF)
 
@@ -115,6 +115,7 @@ def predict_sites(model, data, device, cls_threshold=CLS_THRESHOLD, forward_fn=N
         coord = trilaterate(pos[comp], conf[comp])
         preds.append({
             "coord": coord,
+            "residues": comp.tolist(),
             "n_residues": len(comp),
             "mean_conf": float(conf[comp].mean()),
             "reliable": len(comp) >= TRILATERATE_MIN_SIZE,
@@ -246,7 +247,7 @@ def tune_threshold(model, val_graphs, device, thresholds=None, match_radius=SITE
 
 
 def load_model(all_graphs, device):
-    model = MIDAS(
+    model = ZnSiteFinder(
         in_c=all_graphs[0].x.shape[1],
         out_c=2,
         hid=64,

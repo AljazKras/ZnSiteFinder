@@ -4,7 +4,7 @@ from pathlib import Path
 
 # folder where this script is
 SCRIPT_DIR = Path(__file__).resolve().parent
-sys.path.insert(0, str(SCRIPT_DIR / "temp"))
+sys.path.insert(0, str(SCRIPT_DIR))
 
 import numpy as np
 import torch
@@ -12,8 +12,8 @@ from Bio.PDB import FastMMCIFParser
 
 from config import ESM_PCA_PATH, MODELS_DIR
 from src.core.GNN import ZnSiteFinder
-from src.core.localize import predict_sites
-from src.data_pipeline.esm_features import attach_esm_live, load_esm
+from src.core.localise import predict_sites
+from src.core.esm_features import attach_esm_live, load_esm
 from src.data_pipeline.feature_generation import sidechain_donors
 from src.data_pipeline.graphing import AA, gen_graph
 
