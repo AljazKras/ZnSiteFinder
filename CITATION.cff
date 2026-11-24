@@ -1,33 +1,19 @@
-{
-  "upload_type": "software",
-  "title": "ZnSiteFinder: A Graph Neural Network for Zn2+-Binding Site Prediction in Apo Protein Structures",
-  "description": "ZnSiteFinder is a graph neural network for predicting Zn2+-binding sites in apo protein structures. Residue-level protein graphs combine rotation-invariant geometric and physicochemical features with ESM-2 sequence representations; a graph-attention encoder with a mean-field conditional random field predicts coordinating residues, which are clustered into candidate sites. This record archives the source code, trained model weights for all five random seeds, the curated data sets and the scripts needed to reproduce the analyses reported in the accompanying article.",
-  "license": "mit",
-  "access_right": "open",
-  "version": "1.0.4",
-  "language": "eng",
-  "keywords": [
-    "zinc-binding site prediction",
-    "apo protein structures",
-    "graph neural network",
-    "protein language model",
-    "ESM-2",
-    "metalloproteins",
-    "structural bioinformatics"
-  ],
-  "creators": [
-    {
-      "name": "Krašna, Aljaž",
-      "affiliation": "Faculty of Chemistry and Chemical Technology, University of Ljubljana",
-      "orcid": "0009-0006-1897-0760"
-    },
-    {
-      "name": "Bosnić, Zoran",
-      "affiliation": "Faculty of Computer and Information Science, University of Ljubljana"
-    },
-    {
-      "name": "Hribar-Lee, Barbara",
-      "affiliation": "Faculty of Chemistry and Chemical Technology, University of Ljubljana"
-    }
-  ]
-}
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata from this file."
+type: software
+title: "ZnSiteFinder: A Graph Neural Network for Zn2+-Binding Site Prediction in Apo Protein Structures"
+authors:
+  - family-names: "Krašna"
+    given-names: "Aljaž"
+    orcid: "https://orcid.org/0009-0006-1897-0760"
+    affiliation: "Faculty of Chemistry and Chemical Technology, University of Ljubljana"
+  - family-names: "Bosnić"
+    given-names: "Zoran"
+    affiliation: "Faculty of Computer and Information Science, University of Ljubljana"
+  - family-names: "Hribar-Lee"
+    given-names: "Barbara"
+    affiliation: "Faculty of Chemistry and Chemical Technology, University of Ljubljana"
+version: "1.0.4"
+date-released: "2026-11-24"
+license: MIT
+repository-code: "https://github.com/AljazKras/ZnSiteFinder"
