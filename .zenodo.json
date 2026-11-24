@@ -2,9 +2,9 @@
   "upload_type": "software",
   "title": "ZnSiteFinder: A Graph Neural Network for Zn2+-Binding Site Prediction in Apo Protein Structures",
   "description": "ZnSiteFinder is a graph neural network for predicting Zn2+-binding sites in apo protein structures. Residue-level protein graphs combine rotation-invariant geometric and physicochemical features with ESM-2 sequence representations; a graph-attention encoder with a mean-field conditional random field predicts coordinating residues, which are clustered into candidate sites. This record archives the source code, trained model weights for all five random seeds, the curated data sets and the scripts needed to reproduce the analyses reported in the accompanying article.",
-  "license": {"id": "mit"},
+  "license": "mit",
   "access_right": "open",
-  "version": "v1.0.0",
+  "version": "1.0.4",
   "language": "eng",
   "keywords": [
     "zinc-binding site prediction",
@@ -30,3 +30,4 @@
       "affiliation": "Faculty of Chemistry and Chemical Technology, University of Ljubljana"
     }
   ]
+}
